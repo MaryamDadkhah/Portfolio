@@ -51,7 +51,7 @@ ul li a {
 
 }
 
-@media all and (min-width:405px) {
+@media all and (min-width:340px) {
 
     ul li {
         display: inline;
@@ -242,7 +242,7 @@ ul li a {
 
     /* Media Queries for Responsive Web Design */
     /* Smartphones (portrait and landscape) ----------- */
-    @media only screen and (min-width : 400px) and (max-width : 480px) {
+    @media only screen and (min-width : 180px) and (max-width : 480px) {
 
         /* Styles */
         img {
@@ -355,4 +355,103 @@ ul li a {
             width: 100%;
         }
     }
+}
+
+/* all of our img can be showing with fixed sixe in all screen. */
+img.auto {
+    width: auto;
+}
+
+img.logo {
+    width: auto;
+}
+
+
+/* Center an Image */
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.text-center {
+    text-align: center;
+    padding-top: 12px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Media Queries for Responsive Web Design */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 150px) and (max-width : 480px) {
+
+    /* Styles */
+    img {
+        width: 100%;
+    }
+
+    img.auto {
+        width: 100%;
+    }
+
+
+    ul li {
+        display: inline;
+
+    }
+
+    .center {
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        background: #D3D3D3;
+        border-radius: 25px;
+        filter: drop-shadow(4px 4px 4px #ffa500);
+        padding: 5px;
+    }
+
+    table {
+        border-spacing: 15px;
+    }
+
+    .picture {
+        display: block;
+        width: 100%;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.747));
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    .my-music {
+
+        display: block;
+        width: 30%;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.747));
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+
+    }
+
+    .myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .myImg:hover {
+        opacity: 0.7;
+    }
+
 }
