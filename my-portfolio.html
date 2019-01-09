@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Default Langage -->
+<html lang="en">
+
+<head>
+    <!-- Encode Tag -->
+    <meta charset="utf-8">
+    <!-- Responsive Tag - Mandatory Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The Most Important Title In your Web Page -->
+    <title>Maryam Portfolio</title>
+    <!-- Link for CSS file -->
+    <link href="css/second.css" rel="stylesheet">
+    <!-- Meta Tag Description - Description For Search Engines-SEO -->
+    <meta name="description" content="Here is the home Page of Maryam´s Website. Location: Copenhagen">
+    <!-- Meta Tag Title - Title For Search Engines-SEO -->
+    <meta name="title" content="Marydesign portfolio">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--short icon in top of the page, beside a page name-->
+    <link rel="shortcut icon" href="images/logo/leo-favicon.ico">
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <header>
+
+        <img class="center" src="images/logo/my-logo.png" alt="logo sketch. Made by Maryam Dh" style="margin-top: 0px;"><br>
+
+        <nav>
+            <ul>
+                <li class="myshadow"><a href="mary-homepage.html">Home</a></li>
+
+                <li class="mine"><a href="about-me.html">About-me</a></li>
+
+                <li class="last"><a href="my-portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <audio controls autoplay style="margin-top: 15px; margin-bottom: 5px;" class="my-music">
+            <source src="music/River-Solo.mp3" type="audio/mpeg">
+            <source src="music/RiveR-Solo.ogg" type="audio/ogg">
+
+            Your browser does not support the audio element.
+        </audio>
+        <hr>
+
+        <p style="text-align: center;">Short description of 1st semesters themes!</p>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img class="myImg" src="images/large/responsive-web.jpeg" alt="responsive-web" style="width:100%">
+                    <h3>Basic Web</h3>
+                    <p style="text-align:left; font-size: 18px;">In this theme we’ve learned about different layout principles and how to create a responsive website, with HTML and CSS. All project in this theme was individual work.Furthermore, we used the Adobe programs "Photoshop, XD, Illustrator, and InDesign".</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="myImg" src="images/large/basic-content.jpg" alt="prototype" style="width:100%">
+                    <h3>Basic Content</h3>
+                    <p style="text-align:left; font-size: 19px;">This theme is about creating videos with Premiere, and create sounds with Audition and Microsite. We worked both in groups and individual on projects. <br> Example: <a href="https://www.youtube.com/watch?v=reEI_Y1v3T8&feature=youtu.be">video Without Words</a> <br> 2nd Example: <a href="http://www.marydesign.dk/MICROSITE/MICROSITE/index.html">Microsite</a> </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="myImg" src="images/large/basic-animation.jpg" alt="animation" style="width:100%">
+                    <h3>Basic Animation</h3>
+                    <p style="text-align:left; font-size: 19px;">This theme was about creating an animation with CSS, and JAVAScript. We made our own character and worked with storytelling. We had both group and individual projects. Press LINK to see more! <br> <a href="http://marydesign.dk/animation-Pinocchio/pinocchio.html">pinocchio-animation</a> </p>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img class="myImg" src="images/large/basic-UX22.jpg" alt="UX" style="width:100%">
+                    <h3>Basic UX</h3>
+                    <p style="text-align:left; font-size: 19px;">In this theme we had four steps. User research, Design sprint, Web prototype, and Design sprint native app. We had both group and individual projects. Press LINK to see example of Design sprint Native app! <br> <a href="https://xd.adobe.com/view/e4d5f6f3-9e5d-45da-4d20-93955a5ba39c-92e4/">Prototype</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <img class="myImg" src="images/large/moodboard.jpg" alt="moodboard" style="width:100%">
+            <h3>Mood board from 1st semester</h3>
+            <p style="text-align:left; font-size: 19px;">I took screenshots from some of the 1st semesters projects, and created a new mood board with them. In my oppinion our first semesters made us ready and prepared to work in groups, and individual. For our projects, we learned how to analyse and making a structure for all our stepsm until we reach our target goal. My skills are improved and I feel more ready to make my own imagination come to life. </p>
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        //* Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+
+</html>

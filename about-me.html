@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Default Langage -->
+<html lang="en">
+
+<head>
+    <!-- Encode Tag -->
+    <meta charset="utf-8">
+    <!-- Responsive Tag - Mandatory Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The Most Important Title In your Web Page -->
+    <title>Maryam Portfolio</title>
+    <!-- Link for CSS file -->
+    <link href="css/second.css" rel="stylesheet">
+    <!-- Meta Tag Description - Description For Search Engines-SEO -->
+    <meta name="description" content="Here is the home Page of Maryam´s Website. Location: Copenhagen">
+    <!-- Meta Tag Title - Title For Search Engines-SEO -->
+    <meta name="title" content="Marydesign portfolio">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--short icon in top of the page, beside a page name-->
+    <link rel="shortcut icon" href="images/logo/leo-favicon.ico">
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <img class="center" src="images/logo/my-logo.png" alt="logo sketch. Made by Maryam Dh" style="margin-top: 0px;"><br>
+
+        <nav>
+            <ul>
+                <li class="myshadow"><a href="mary-homepage.html">Home</a></li>
+
+                <li class="mine"><a href="about-me.html">About-me</a></li>
+
+                <li class="last"><a href="my-portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <img class="myImg picture" src="images/large/me.jpg" alt="my-picture" style="width:40%; padding-top: 20px;">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">×</span>
+
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+
+    <audio controls autoplay style="margin-top: 15px; margin-bottom: 5px;" class="my-music">
+        <source src="music/River-Solo.mp3" type="audio/mpeg">
+        <source src="music/RiveR-Solo.ogg" type="audio/ogg">
+
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2 class="title"> Student of Multi Media Designer at Kea!<br> Who makes the impossible to possible!</h2>
+
+    <p class="p2">
+        Maryam is an iranian girl, who lived in Denmark for 7 years.
+        I am a graduated Computer Software Engineer from Iran, and now I am a student at KEA in Copenhagen, Denmark in the Multimedia Design and Communication program. I love computer technology, and a new challenge is always welcome!
+        My life is full of love for my family, and music is a very big part of my life as well. I believe that music has a solution for everything. I also love traveling and with traveling, we can experience the world from another perspective of different people with different cultures!
+    </p>
+
+
+    <h2 class="title"> Maryam's CV!</h2>
+
+
+
+    <h3 style="font-size: 20px;  text-align:center;"> A: My Danmark's experience!</h3>
+
+    <table style="width:100%" class="my-table">
+        <tr>
+            <th>Place</th>
+            <th>Education/Work</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>KEA in Copenhagen Denmark</td>
+            <td>Education:MMD</td>
+            <td>2018-2020</td>
+        </tr>
+        <tr>
+            <td>Tradium Randers</td>
+            <td>Education:Data og kommunikation/It support</td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td>POUL TARP A/S</td>
+            <td>Work:Grafisk designer</td>
+            <td>2014-2015</td>
+        </tr>
+    </table>
+
+
+    <h3 style="font-size: 20px;  text-align:center; padding-top: 15px;"> B: My Iran's experience!</h3>
+
+    <table style="width:100%;" class="my-table">
+        <tr>
+            <th>Place</th>
+            <th>Education/Work</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>University of Tehran</td>
+            <td>Education:Bachelor´ Degree in Computer Software Technology Engineering</td>
+            <td>2009-2011</td>
+        </tr>
+        <tr>
+            <td>University of Isfahan</td>
+            <td>Education:Associate degree in Computer Software</td>
+            <td>2006-2008</td>
+        </tr>
+        <tr>
+            <td>Arkitect design group tehran</td>
+            <td>Work:It-administrator - Grafiker</td>
+            <td>2004-2011</td>
+        </tr>
+        <tr>
+            <td>High School in Tehran</td>
+            <td>Work:Mathematics Teacher</td>
+            <td>2002-2004</td>
+        </tr>
+        <tr>
+            <td>Vala Tea Company</td>
+            <td>Work:Account Manager</td>
+            <td>2002-2004</td>
+        </tr>
+    </table>
+
+    <h3 style="font-size: 20px;  text-align:center; padding-top: 15px;"> My contact information!</h3>
+    <hr>
+    <h4 style="font-size: 15px;  text-align:center; padding-top: 5px;">E-mail: maryam.dadkhah.88@gmail.com</h4>
+    <h4 style="font-size: 15px;  text-align:center; padding-top: 5px;">Linkedin: <a href="https://www.linkedin.com/in/maryam-dadkhah-ba714212a/">Maryam Linkedin</a></h4>
+
+
+</body>
+
+
+</html>

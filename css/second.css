@@ -1,0 +1,358 @@
+body {
+    background-image: radial-gradient(circle, #514d4f, #575456, #5d5b5d, #646265, #6a696c, #696a6d, #686a6d, #686b6d, #616566, #5a5e60, #535859, #4c5252);
+}
+
+html {
+    box-sizing: border-box
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*//navigation bar////*/
+
+
+nav {
+
+    width: 100%;
+    background: #D3D3D3;
+    border-radius: 25px;
+    filter: drop-shadow(4px 4px 4px #ffa500);
+    padding: 0 5px;
+}
+
+.myshadow {
+    color: rgb(80, 80, 80);
+    filter: drop-shadow(0px 1px 1px rgb(0, 0, 0));
+}
+
+ul {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+
+}
+
+ul li a:hover {
+    background: rgb(80, 80, 80);
+    color: white;
+}
+
+ul li a {
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.mine {
+    text-align: center;
+
+}
+
+@media all and (min-width:405px) {
+
+    ul li {
+        display: inline;
+
+    }
+
+    .center {
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        background: #D3D3D3;
+        border-radius: 25px;
+        filter: drop-shadow(4px 4px 4px #ffa500);
+        padding: 5px;
+    }
+
+    table {
+        border-spacing: 15px;
+    }
+
+    /*////////////////////////style////*/
+
+    .picture {
+        display: block;
+        width: 100%;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.747));
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+    }
+
+    .my-music {
+
+        display: block;
+        width: 30%;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.747));
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+
+    }
+
+    .myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .myImg:hover {
+        opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0.1)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+
+    /* all of our img can be showing with fixed sixe in all screen. */
+    img.auto {
+        width: auto;
+    }
+
+    img.logo {
+        width: auto;
+    }
+
+
+    .title {
+        font-size: 24px;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-right: 4px;
+        text-align: center;
+
+    }
+
+    p {
+        display: block;
+        text-align: justify;
+        font-size: 24px;
+        padding: 12px;
+        background-color: #D3D3D3;
+        border-radius: 25px;
+        filter: drop-shadow(4px 4px 4px #ffa500);
+        width: 100%;
+    }
+
+    /* Media Queries for Responsive Web Design */
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-width : 400px) and (max-width : 480px) {
+
+        /* Styles */
+        img {
+            width: 100%;
+        }
+
+        img.auto {
+            width: 100%;
+        }
+
+        .responsive-video {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: orange;
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        .my-table {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+
+    /*table*/
+
+    .my-table {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    /*portfolio*/
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #D3D3D3;
+        padding: 20px;
+        font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 44px;
+        word-break: break-all;
+        text-align: center;
+    }
+
+    .row {
+        margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+        padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Content */
+    .content {
+        background-color: white;
+        padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+}
